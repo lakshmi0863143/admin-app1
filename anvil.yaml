@@ -1,0 +1,26 @@
+correct_dependency_ids: {}
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: log_in_form}
+package_name: Admin_app
+allow_embedding: false
+name: Clone of Admin app
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+startup_form: null
+db_schema:
+  log_in_table:
+    client: full
+    server: full
+    columns:
+    - name: email
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: password
+      admin_ui: {width: 200, order: 1}
+      type: string
+    title: log_in_table
+renamed: true

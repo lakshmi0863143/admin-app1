@@ -1,0 +1,27 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: XYPanel
+    properties: {height: 323}
+    name: xy_panel_1
+    layout_properties: {grid_position: 'CGUQPY,IXJGGB'}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: white, visible: true, text: Log Out, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '#258d5d', bold: false, underline: false, icon: ''}
+    name: button_1
+    layout_properties: {}
+    event_bindings: {click: button_1_click}
