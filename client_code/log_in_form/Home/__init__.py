@@ -15,3 +15,5 @@ class Home(HomeTemplate):
     """This method is called when the button is clicked"""
     open_form('log_in_form')
 
+ 
+
