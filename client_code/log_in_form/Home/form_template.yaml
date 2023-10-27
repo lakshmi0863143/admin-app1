@@ -9,7 +9,7 @@ components:
   layout_properties: {slot: default}
   components:
   - type: XYPanel
-    properties: {height: 323}
+    properties: {height: 413}
     name: xy_panel_1
     layout_properties: {grid_position: 'CGUQPY,IXJGGB'}
     components:
@@ -19,13 +19,13 @@ components:
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: true, underline: false, icon: ''}
       name: label_1
-      layout_properties: {x: 10, y: 10, width: 661}
+      layout_properties: {x: 10, y: 10, width: 855}
     - type: Link
       properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Manage Borrowers, font_size: null, wrap_on: mobile, font: '',
         col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
         spacing_below: small, italic: false, background: '', bold: false, underline: false,
-        icon: ''}
+        icon: 'fa:align-left'}
       name: link_2
       layout_properties: {x: 317, y: 74, width: 254}
       event_bindings: {click: link_2_click}
@@ -38,9 +38,69 @@ components:
       name: link_1
       layout_properties: {x: 10, y: 74, width: 255}
     - type: Link
-      properties: {}
+      properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Manage Lenders, font_size: null, wrap_on: mobile, font: '',
+        col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: 'fa:chain-broken'}
       name: link_3
-      layout_properties: {x: 618.0000076293945, y: 74, width: 254}
+      layout_properties: {x: 618, y: 74, width: 254}
+    - type: Link
+      properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Manage Products, font_size: null, wrap_on: mobile, font: '',
+        col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: 'fa:exclamation-triangle'}
+      name: link_5
+      layout_properties: {x: 317, y: 146, width: 254}
+    - type: Link
+      properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Manage Settings, font_size: null, wrap_on: mobile, font: '',
+        col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: 'fa:cogs'}
+      name: link_6
+      layout_properties: {x: 618, y: 146, width: 254}
+    - type: Link
+      properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Manage Revenue Share, font_size: null, wrap_on: mobile,
+        font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: 'fa:inr'}
+      name: link_7
+      layout_properties: {x: 10, y: 215, width: 255}
+    - type: Link
+      properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Manage Risk Pool (FLDGB), font_size: null, wrap_on: mobile,
+        font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: 'fa:stumbleupon'}
+      name: link_8
+      layout_properties: {x: 317, y: 215, width: 254}
+    - type: Link
+      properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Manage CMS, font_size: null, wrap_on: mobile, font: '',
+        col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: 'fa:dribbble'}
+      name: link_9
+      layout_properties: {x: 618, y: 215, width: 254}
+    - type: Link
+      properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Manage Reports, font_size: null, wrap_on: mobile, font: '',
+        col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: 'fa:newspaper-o'}
+      name: link_10
+      layout_properties: {x: 10, y: 278, width: 255}
+    - type: Link
+      properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Loan Management, font_size: null, wrap_on: mobile, font: '',
+        col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: 'fa:trello'}
+      name: link_4
+      layout_properties: {x: 10, y: 146, width: 255}
 - type: FlowPanel
   properties: {}
   name: navbar_links
