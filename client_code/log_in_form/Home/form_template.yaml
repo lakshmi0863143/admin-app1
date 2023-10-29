@@ -37,6 +37,7 @@ components:
         icon: 'fa:cube'}
       name: link_1
       layout_properties: {x: 10, y: 74, width: 255}
+      event_bindings: {click: link_1_click}
     - type: Link
       properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Manage Lenders, font_size: null, wrap_on: mobile, font: '',
@@ -45,6 +46,7 @@ components:
         icon: 'fa:chain-broken'}
       name: link_3
       layout_properties: {x: 618, y: 74, width: 254}
+      event_bindings: {click: link_3_click}
     - type: Link
       properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Manage Products, font_size: null, wrap_on: mobile, font: '',
@@ -53,6 +55,7 @@ components:
         icon: 'fa:exclamation-triangle'}
       name: link_5
       layout_properties: {x: 317, y: 146, width: 254}
+      event_bindings: {click: link_5_click}
     - type: Link
       properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Manage Settings, font_size: null, wrap_on: mobile, font: '',
@@ -61,6 +64,7 @@ components:
         icon: 'fa:cogs'}
       name: link_6
       layout_properties: {x: 618, y: 146, width: 254}
+      event_bindings: {click: link_6_click}
     - type: Link
       properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Manage Revenue Share, font_size: null, wrap_on: mobile,
@@ -69,6 +73,7 @@ components:
         icon: 'fa:inr'}
       name: link_7
       layout_properties: {x: 10, y: 215, width: 255}
+      event_bindings: {click: link_7_click}
     - type: Link
       properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Manage Risk Pool (FLDGB), font_size: null, wrap_on: mobile,
@@ -77,6 +82,7 @@ components:
         icon: 'fa:stumbleupon'}
       name: link_8
       layout_properties: {x: 317, y: 215, width: 254}
+      event_bindings: {click: link_8_click}
     - type: Link
       properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Manage CMS, font_size: null, wrap_on: mobile, font: '',
@@ -85,6 +91,7 @@ components:
         icon: 'fa:dribbble'}
       name: link_9
       layout_properties: {x: 618, y: 215, width: 254}
+      event_bindings: {click: link_9_click}
     - type: Link
       properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Manage Reports, font_size: null, wrap_on: mobile, font: '',
@@ -93,6 +100,7 @@ components:
         icon: 'fa:newspaper-o'}
       name: link_10
       layout_properties: {x: 10, y: 278, width: 255}
+      event_bindings: {click: link_10_click}
     - type: Link
       properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Loan Management, font_size: null, wrap_on: mobile, font: '',
@@ -101,6 +109,7 @@ components:
         icon: 'fa:trello'}
       name: link_4
       layout_properties: {x: 10, y: 146, width: 255}
+      event_bindings: {click: link_4_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
