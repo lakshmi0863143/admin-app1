@@ -110,6 +110,10 @@ components:
       name: link_4
       layout_properties: {x: 10, y: 146, width: 255}
       event_bindings: {click: link_4_click}
+    - type: Link
+      properties: {}
+      name: link_11
+      layout_properties: {x: 317, y: 278, width: 254}
 - type: FlowPanel
   properties: {}
   name: navbar_links
