@@ -1,0 +1,110 @@
+container: {type: DataRowPanel}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: POVYUN}
+- type: DataRowPanel
+  properties: {}
+  name: data_row_panel_1
+  layout_properties: {column: null}
+  components:
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: tb_i_investment
+    layout_properties: {column: POVYUN}
+    event_bindings: {pressed_enter: tb_i_investment_pressed_enter}
+    data_bindings:
+    - {property: text, code: 'self.item[''initial_investment'']', writeback: true}
+  - type: FlowPanel
+    properties: {}
+    name: flow_panel_1
+    layout_properties: {column: null}
+    components:
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '#138fb9', visible: true, text: '', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: 'fa:floppy-o'}
+      name: button_1
+      layout_properties: {}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '#138fb9', visible: true, text: '', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: 'fa:trash'}
+      name: button_2
+      layout_properties: {}
+  - type: DropDown
+    properties:
+      role: outlined
+      align: full
+      tooltip: ''
+      placeholder: select
+      border: ''
+      enabled: true
+      foreground: ''
+      items: [6Months, 1Year, 2Years]
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: true
+    name: td_tenure
+    layout_properties: {column: IIRMTX}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''tenure'']', writeback: true}
+  - type: DropDown
+    properties:
+      role: outlined
+      align: full
+      tooltip: ''
+      placeholder: select
+      border: ''
+      enabled: true
+      foreground: ''
+      items: [Silver, Gold, Platinum]
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: true
+    name: tb_member
+    layout_properties: {column: SBRIUH}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''membership_type'']', writeback: true}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: tb_interest_rate
+    layout_properties: {column: ZJRBXV}
+    data_bindings:
+    - {property: text, code: 'self.item[''interest_rate'']', writeback: true}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {column: IIRMTX}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {column: SBRIUH}
+- type: Label
+  properties: {}
+  name: label_4
+  layout_properties: {column: ZJRBXV}
+is_package: true
