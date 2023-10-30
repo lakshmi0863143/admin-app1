@@ -55,6 +55,10 @@ class Home(HomeTemplate):
     """This method is called when the link is clicked"""
     open_form('log_in_form.Home.manage_reports')
 
+  def link_11_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('log_in_form.Home.roimodule')
+
 
     
     
